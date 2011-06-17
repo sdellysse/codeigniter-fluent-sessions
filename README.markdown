@@ -65,6 +65,9 @@ Fluent Session flash categories:
         <li>passwords: Must match</li>
     </ul>
 
+Due to these being part of flash data, just like any other flash data, they will
+only persist for one subsequent page load.
+
 Installation:
 -------------
 Copy libraries/MY\_Session into your application/libraries directory.
