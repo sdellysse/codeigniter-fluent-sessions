@@ -62,3 +62,7 @@ Fluent Session flash categories:
         <li>passwords: Must match</li>
     </ul>
 
+Installation:
+-------------
+Copy libraries/MY\_Session into your application/libraries directory.
+
