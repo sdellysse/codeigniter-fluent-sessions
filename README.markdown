@@ -37,4 +37,28 @@ Examples of the alternative syntax
     $this->session->flash->flashkey = 'flashvalue';
     $this->session->destroy();
 
+Note the differences in the two code samples above. The standard CI Session
+class requires you to pollute your intention with function calls just to set
+and get data from the session. Fluent Sessions, on the other hand, uses a
+clearer syntax to set a key/value pair.
+
+Fluent Session flash categories:
+--------------------------------
+
+### Example controller code:
+    $this->session->flash->warnings['username'] = 'Cannot be blank';
+    $this->session->flash->warnings['passwords'] = 'Must match';
+### Example view code:
+    <?php if (count($this->session->flash->warnings)): ?>
+        <ul>
+            <?php foreach ($this->sessions->flash->warnings as $field => $message): ?>
+                <li><?php echo $field ?>: <?php echo $message ?></li>
+            <?php endforeach ?>
+        </ul>
+    <?php endif ?>
+### Generates:
+    <ul>
+        <li>username: Cannot be blank</li>
+        <li>passwords: Must match</li>
+    </ul>
 
