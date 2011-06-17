@@ -4,7 +4,9 @@ What does 'Fluent' mean?
 ------------------------
 
 A 'Fluent' API is one that takes advantage of language features to make using
-said API less of a chore, and, many times, more self-descriptive.
+said API less of a chore, and, many times, more self-descriptive. A fluent API
+attempts to require the user to only use as little of the parent language as
+possible to describe what they are wanting to do.
 
 What does Fluent Sessions for CodeIgniter bring to the table?
 -------------------------------------------------------------
@@ -12,6 +14,7 @@ What does Fluent Sessions for CodeIgniter bring to the table?
 Fluent Sessions has two functions:
 
 * Provide an alternate API to smooth over the wrinkles in the userdata and
+  flashdata API of the standard CodeIgniter session class.
 * Provide standard mechanism for classifying flashdata into three
   categories:
   * Notices: Good things; Success messages.
