@@ -23,11 +23,18 @@ Examples of the alternative syntax
 
 ### Standard Session:
     $this->session->set_userdata('key', 'value');
-    $this->session->set_flashdata('flashkey', 'flashvalue');
     $key = $this->session->userdata('key');
+    $this->session->set_userdata('another_key', 'another value');
+    $this->session->unset_userdata('key');
+    $this->session->unset_userdata('another_key');
+    $this->session->set_flashdata('flashkey', 'flashvalue');
+    $this->session->sess_destroy();
 ### Fluent Session:
     $this->session->key = 'value';
-    $this->session->flash->flashkey = 'flashvalue';
     $key = $this->session->key;
+    $this->session->another_key = 'another value';
+    $this->session->clear();
+    $this->session->flash->flashkey = 'flashvalue';
+    $this->session->destroy();
 
 
