@@ -11,12 +11,12 @@ What does Fluent Sessions for CodeIgniter bring to the table?
 
 Fluent Sessions has two functions:
 
-- Provide an alternate API to smooth over the wrinkles in the userdata and
-- Provide standard mechanism for classifying flashdata into three
+* Provide an alternate API to smooth over the wrinkles in the userdata and
+* Provide standard mechanism for classifying flashdata into three
   categories:
-  - Notices: Good things; Success messages.
-  - Messages: Generic message of neutral information
-  - Warnings: Report bad things such as errors or bad form input.
+  * Notices: Good things; Success messages.
+  * Messages: Generic message of neutral information
+  * Warnings: Report bad things such as errors or bad form input.
 
 Examples of the alternative syntax
 ----------------------------------
